@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>新品開發研究室｜Beauty Lab Drinks</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .rnd-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .drink-card {
+            width: 30%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .drink-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+        }
+
+        .vote-btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #FF80AB;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .vote-btn:hover {
+            background-color: #FF4F9A;
+        }
+    </style>
+
+    <script>
+        function vote(drinkName) {
+            alert("感謝妳投給「" + drinkName + "」❤️ 美女的選擇永遠最美！");
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <img src="images/chen.png" class="header-girl-left" alt="陳美女">
+    <img src="images/hsu.png" class="header-girl-right" alt="許美女">
+
+    <h1>Beauty Lab Drinks 美女飲品研究室</h1>
+    <p>Find Your Beauty Flavor 💗💚</p>
+</header>
+
+<div class="layout">
+
+    <!-- 左邊選單 -->
+    <aside>
+        <h2 class="site-title">Beauty Lab</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">品牌故事</a></li>
+                <li><a href="philosophy.html">美女理念</a></li>
+                <li><a href="menu.html">美女飲品菜單</a></li>
+                <li><a href="featured.html">本月美女推薦</a></li>
+                <li><a href="environment.html">美女拍照區</a></li>
+                <li><a href="rnd.html">新品開發研究室</a></li>
+                <li><a href="review.html">顧客評價</a></li>
+                <li><a href="location.html">分店資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 右邊主內容 -->
+    <main>
+
+        <article class="article-box">
+            <h1>下一杯人氣王由妳決定！</h1>
+            <p>
+                這裡是 Beauty Lab 的秘密飲品實驗室 🧪💖<br>
+                我們正在研發下一波要讓全網爆紅的美女系飲品！<br><br>
+                ✨ 每一杯都是「不同美女性格」的味道  
+                ✨ 妳只要投票，就能決定哪一杯會正式上市！
+            </p>
+        </article>
+
+        <div class="rnd-container">
+
+            <!-- 飲料 1 -->
+            <div class="drink-card">
+                <img src="images/berry.jpg" alt="莓果泡泡雪酪">
+                <h2>莓果泡泡雪酪｜活力系美女</h2>
+                <p>酸甜莓果＋冰沙口感，每一口都像妳的亮眼笑容一樣有活力！💖</p>
+                <button class="vote-btn" onclick="vote('莓果泡泡雪酪')">投這杯！</button>
+            </div>
+
+            <!-- 飲料 2 -->
+            <div class="drink-card">
+                <img src="images/caramel.jpg" alt="焦糖瑪奇朵">
+                <h2>蜜香焦糖瑪奇朵｜成熟系美女</h2>
+                <p>濃郁焦糖與咖啡香，層次分明，就像妳優雅又自信的魅力 ✨</p>
+                <button class="vote-btn" onclick="vote('蜜香焦糖瑪奇朵')">投這杯！</button>
+            </div>
+
+            <!-- 飲料 3 -->
+            <div class="drink-card">
+                <img src="images/grape.jpg" alt="白葡萄冰茶">
+                <h2>柚香白葡萄冰茶｜清新系美女</h2>
+                <p>白葡萄的香甜＋柚子的清爽，像森林系美女的自然透亮感🍃</p>
+                <button class="vote-btn" onclick="vote('柚香白葡萄冰茶')">投這杯！</button>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>
